@@ -1,1 +1,1 @@
-# Repositório de praticas de POO1
+# Repositório de práticas de POO1

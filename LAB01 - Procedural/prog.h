@@ -1,5 +1,6 @@
-#ifndef _prog_
-#define _prog_
+#ifndef _progh_
+#define _progh_
 
+#include "pep.h"
 
 #endif
