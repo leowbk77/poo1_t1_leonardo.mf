@@ -96,7 +96,7 @@ int list_print_product(productlist *list){
         printf("Codigo: %d\n", aux->product.codigo);
         printf("Nome: %s\n", aux->product.nome);
         printf("fabricante: %s\n", aux->product.fabricante);
-        printf("preco: %s\n\n", aux->product.valor);
+        printf("preco: %f\n\n", aux->product.valor);
         aux = aux -> next;
     }
 

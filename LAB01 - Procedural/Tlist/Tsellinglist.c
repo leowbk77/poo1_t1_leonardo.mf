@@ -7,7 +7,7 @@ typedef struct list_node node;
 struct sellinglist{
     node *head;
     node *end;
-}
+};
 
 struct list_node {
     sell sell;

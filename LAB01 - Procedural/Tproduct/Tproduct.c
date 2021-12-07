@@ -24,5 +24,5 @@ void print_product(product *p_product){
     printf("Codigo: %d\n", p_product->codigo);
     printf("Nome: %s\n", p_product->nome);
     printf("fabricante: %s\n", p_product->fabricante);
-    printf("preco: %s\n\n", p_product->valor);
+    printf("preco: %f\n\n", p_product->valor);
 }
