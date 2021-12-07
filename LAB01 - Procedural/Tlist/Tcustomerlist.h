@@ -24,8 +24,4 @@ int list_free(customerlist *list);
 
 int push(customerlist *list, customer p_customer);
 
-int pop(customerlist *list, customer *p_customer);
-
-int list_print(customerlist *list);
-
 #endif

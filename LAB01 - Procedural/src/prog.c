@@ -34,14 +34,6 @@ void cadastrarCliente(customerlist *customerList) {
     free_customer(customer);
 }
 
-void listarClientes(customerlist *customerList) {
-    if (customerList != NULL) {
-        list_print(customerList);
-    } else {
-        printf("\n[ERRO] Nao ha clientes cadastrados!\n");
-    }
-}
-
 void cadastrarFuncionario(employeelist *employeeList) {
     char nome[50] = "";
     char cpf[14] = "";
@@ -129,7 +121,6 @@ void menu(customerlist *customerList, productlist *productList, employeelist *em
         printf("[4] - Comprar um produto\n");
         printf("[5] - Produto mais vendido\n");
         printf("[6] - Cliente que mais gasta\n");
-        printf("[7] - Listar todos os clientes\n");
         printf("[0] - SAIR\n");
 
         printf("\nOpcao desejada: ");
@@ -156,13 +147,11 @@ void menu(customerlist *customerList, productlist *productList, employeelist *em
             break;
 
         case '5':
+            printf("\n[INFO] Desculpe, a funcionalidade ainda está em desenvolvimento. Volte mais tarde!\n");
             break;
 
         case '6':
-            break;
-        
-        case '7':
-            listarClientes(customerList);
+            printf("\n[INFO] Desculpe, a funcionalidade ainda está em desenvolvimento. Volte mais tarde!\n");
             break;
         
         default:

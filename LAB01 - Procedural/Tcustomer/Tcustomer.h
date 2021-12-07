@@ -12,9 +12,6 @@ struct customer {
 
 customer *create_customer(char *cpf, char *nome, char *dataNascimento, char *cep);
 
-// printa o customer para debugs
-void print_customer(customer *p_customer);
-
 // libera espaco alocado para o customer
 void free_customer(customer *p_customer);
 
