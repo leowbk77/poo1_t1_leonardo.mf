@@ -1,4 +1,4 @@
-package com.pcf.funcionarios;
+package ex02.funcionario;
 
 public class Funcionario {
     private String cpf;

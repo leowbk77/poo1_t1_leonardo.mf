@@ -1,4 +1,4 @@
-package com.pcf.produtos;
+package ex02.produto;
 
 public class Produto {
     private int codigo;

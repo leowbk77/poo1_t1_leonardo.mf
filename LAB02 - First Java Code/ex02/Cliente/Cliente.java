@@ -1,4 +1,4 @@
-package com.pcf.clientes;
+package ex02.cliente;
 
 public class Cliente {
     private String cpf;

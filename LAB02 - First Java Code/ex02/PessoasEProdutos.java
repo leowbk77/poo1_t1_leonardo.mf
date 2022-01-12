@@ -1,4 +1,4 @@
-package com.pcf;
+package ex02;
 
 public class PessoasEProdutos {
     public static void main(String[] argv){
