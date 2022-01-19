@@ -20,7 +20,7 @@ public class List {
             size++;
         }else{
             Node newNode = new Node(valor);
-            tempNode.setNextNode(head);
+            newNode.setNextNode(head);
             head = newNode;
             size++;
         }
@@ -37,6 +37,12 @@ public class List {
         }
     }
 
-    
+    public int size(){
+        return size;
+    }
+
+    public void insert(int pos, int valor){
+
+    }
     
 }
