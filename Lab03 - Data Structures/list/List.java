@@ -42,7 +42,23 @@ public class List {
     }
 
     public void insert(int pos, int valor){
+        if(size > pos){
+            Node tempNode = head;
+            Node newNode = new Node(valor);
+            int i = 0;
 
+            while(tempNode.getNext() != null && i < pos){ // -1?
+                tempNode = tempNode.getNext();
+                i++;
+            }
+
+            newNode.setNextNode(tempNode.getNext());
+            tempNode.setNextNode(newNode);
+            size++;
+        }else if(size == pos){
+            push_back(valor);
+        }
     }
+    
     
 }
