@@ -68,7 +68,7 @@ public class Retangulo {
             System.out.println("Informe os pontos que definem o retangulo" + (i+1) + ":\nx2 y2:");
             x2 = scanf.nextFloat();
             y2 = scanf.nextFloat();
-            ret[i].setP1(x1, y1);
+            ret[i].setP1(x1, y1);// check:faltou chamar new para cada elemento do array
             ret[i].setP2(x2, y2);
         }
 
