@@ -11,7 +11,7 @@ public class ProdutoPerecivel extends Produto{
     }
 
     public int retiraEstoque(int remove, Calendar dia_corrente){
-        if(/* validade.getTime() > dia_corrente.getTime() + 2 */){ // se a data corrente > 2 meses da validade, zerar o estoque;
+        if(/* validade.get(Calendar.MONTH) > (dia_corrente.get(Calendar.MONTH) + 2) */){ // se a data corrente > 2 meses da validade, zerar o estoque (?)
             quantidade = 0;
             return quantidade;
         }else if(quantidade >= remove){
@@ -29,6 +29,10 @@ public class ProdutoPerecivel extends Produto{
         if(quantidade == 0){
             quantidade = adiciona;
         }
+    }
+
+    public void printValidade(){
+        System.out.println("Validade: " + validade.get(Calendar.DAY_OF_WEEK) + "/" + validade.get(Calendar.MONTH) + "/" + validade.get(Calendar.YEAR));
     }
 
 }
