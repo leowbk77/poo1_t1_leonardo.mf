@@ -1,16 +1,17 @@
 package ex01;
 
+// IMPLEMENTACAO A SER CORRIGIDA
 public class ContaComum extends ContaCorrente{
     public ContaComum(float val, int num, int pwd){
-        numConta = num;
-        senha = pwd;
-        saldo = val;
-        estado = 1;
+        super.setSaldo(val);
+        super.setSenha(pwd);
+        super.setNumConta(num);
+        super.setEstado(1);
     }
 
     public boolean debitaValor(float val, int pwd) {
         if (pwd != senha)
-            return (false); // senha deve ser vá lida
+            return (false); // senha deve ser válida
         if (estado != 1)
             return (false); // conta deve ser ativa
         if (val <= 0)
