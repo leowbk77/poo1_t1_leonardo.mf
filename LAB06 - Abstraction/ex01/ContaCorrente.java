@@ -1,10 +1,10 @@
 package ex01;
 
 public abstract class ContaCorrente {
-    private float saldo;
-    private int estado; // 1= conta ativa 2= conta inativa
-    private int numConta;
-    private int senha;
+    /*private*/ protected float saldo;
+    /*private*/ protected int estado; // 1= conta ativa 2= conta inativa
+    /*private*/ protected int numConta;
+    /*private*/ protected int senha;
 
     public abstract boolean debitaValor(float val, int pwd);
     public abstract void debitaValor(float val);
@@ -66,7 +66,7 @@ public abstract class ContaCorrente {
             estado = e;
     }
 
-    protected boolean isSenha(int pwd)
+    protected boolean isSenha(int pwd) {
         if (senha == pwd)
             return true;
         else
