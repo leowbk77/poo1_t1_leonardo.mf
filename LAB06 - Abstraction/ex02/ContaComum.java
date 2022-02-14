@@ -12,7 +12,7 @@ public class ContaComum extends ContaCorrente{
     public boolean debitaValor(float val, int pwd) {
         float saldoAtual = getSaldo(pwd);
 
-        if(isSenha(pwd) == false)
+        if(!(isSenha(pwd)))
             return (false); // senha deve ser válida
         if(getEstado(pwd) != 1)
             return (false); // conta deve ser ativa
