@@ -1,4 +1,4 @@
-package list.Node;
+package list;
 
 public class Node {
     private int x;
@@ -37,6 +37,4 @@ public class Node {
             return false;
         }
     }
-
-
 }

@@ -1,6 +1,6 @@
 package list;
 
-import list.Node.Node;
+import list.Node;
 
 public class List {
     private Node head;
@@ -60,5 +60,50 @@ public class List {
         }
     }
     
+    public void pop_front(){
+        if(size == 0){
+            return;
+        }else if(size == 1){
+            head = null;
+            tail = null;
+            size = 0;
+        }else{
+            head = head.getNext();
+            size--;
+        }
+    }
+
+    public void pop_back(){
+        if(size == 0){
+            return;
+        }else if(size == 1){
+            head = null;
+            tail = null;
+            size = 0;
+        }else{
+            Node aux = head;
+            while(aux.getNext() != tail){
+                aux = aux.getNext();
+            }
+            tail = aux;
+            size--;
+        }
+    }
     
+    public int front(){
+        return head.getInt();
+    }
+
+    public int back(){
+        return tail.getInt();
+    }
+
+    public void print(){
+        Node aux = head;
+        while(aux.getNext() != null){
+            System.out.println(aux.getInt());
+            aux = aux.getNext();
+        }
+    }
+
 }

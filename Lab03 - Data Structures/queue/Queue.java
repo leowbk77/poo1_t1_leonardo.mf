@@ -1,3 +1,5 @@
+package queue;
+
 import list.List;
 
 public class Queue{
@@ -15,4 +17,17 @@ public class Queue{
         return lista.size();
     }
 
+    public int pop(){
+        int popped = lista.back();
+        lista.pop_back();
+        return popped;
+    }
+
+    public int front(){
+        return lista.front();
+    }
+
+    public void print(){
+        lista.print();
+    }
 }
