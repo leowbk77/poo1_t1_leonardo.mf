@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class Professor {
+public class Professor extends Pessoa implements Senioridade{
     String NumeroFuncional;
     String Nome;
     String CPF;
@@ -17,5 +17,17 @@ public class Professor {
         NumeroFuncional = numeroFuncional;
         Nome = nome;
         this.CPF = CPF;
+    }
+
+    public void gerarCertificado(){
+        System.out.println("Certifico que o " + Nome + " é orientador de estudantes");
+    }
+
+    public boolean ehSenior(Senioridade prof){
+        if(DataContrato.compareTo(prof.DataContrato > 0){
+            return true;
+        }else{
+            return false;
+        }
     }
 }

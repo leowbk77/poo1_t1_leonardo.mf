@@ -1,23 +1,17 @@
-public class EstudantePosGrad {
-    String CPF;
-    String Nome;
-    String Matricula;
-    int CargaHorariaDisciplinas;
-    String Nivel; // doutorado ou mestrado
-    String TemaProjetoPesquisa;
+public class EstudantePosGrad extends Estudante{
+    protected String Nivel; // doutorado ou mestrado
+    protected String TemaProjetoPesquisa;
 
     public EstudantePosGrad(String CPF, String matricula, String nome) {
-        this.CPF = CPF;
-        Nome = nome;
-        Matricula = matricula;
+        super(nome, CPF, matricula);
     }
 
     public int getCargaHorariaDisciplinas() {
-        return CargaHorariaDisciplinas;
+        return super.CargaHorariaDisciplinas;
     }
 
     public void setCargaHorariaDisciplinas(int cargaHorariaDisciplinas) {
-        CargaHorariaDisciplinas = cargaHorariaDisciplinas;
+        super.CargaHorariaDisciplinas = cargaHorariaDisciplinas;
     }
 
     public String getNivel() {
@@ -36,13 +30,17 @@ public class EstudantePosGrad {
         TemaProjetoPesquisa = temaProjetoPesquisa;
     }
 
-    public void informacoesEstudantePos(){
-        System.out.println("Nome: " + Nome);
-        System.out.println("CPF: " + CPF);
-        System.out.println("Matricula: " + Matricula );
-        System.out.println("Carga Horária: " +  CargaHorariaDisciplinas);
+    public void informacoesEstudante(){
+        System.out.println("Nome: " + super.Nome);
+        System.out.println("CPF: " + super.CPF);
+        System.out.println("Matricula: " + super.Matricula );
+        System.out.println("Carga Horária: " +  super.CargaHorariaDisciplinas);
         System.out.println("Nível: " +  Nivel);
         System.out.println("Tema de pesquisa: " +  TemaProjetoPesquisa);
     }
+
+    public void gerarCertificado(){
+        System.out.println("Certifico que o " + super.Nome + " participa do projeto " +  TemaProjetoPesquisa);
+    };
 }
 
