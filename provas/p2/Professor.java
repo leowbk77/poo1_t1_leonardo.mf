@@ -24,7 +24,7 @@ public class Professor extends Pessoa implements Senioridade{
     }
 
     public boolean ehSenior(Senioridade prof){
-        if(DataContrato.compareTo(prof.DataContrato > 0){
+        if(DataContrato.compareTo(prof.DataContrato) > 0){
             return true;
         }else{
             return false;

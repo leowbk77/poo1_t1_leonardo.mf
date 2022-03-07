@@ -60,4 +60,6 @@ public class EstudanteGrad extends Estudante{
     public void gerarCertificado(){
         System.out.println("Certifico que o <nome do aluno> realiza estágio em " +  LocalEstagio);
     };
+
+    
 }
