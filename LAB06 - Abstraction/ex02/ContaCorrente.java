@@ -44,6 +44,14 @@ public abstract class ContaCorrente {
             return -1; // erro na senha
     }
 
+    protected int getNumConta(int pwd){
+        if(senha == pwd){
+            return numConta;
+        }else{
+            return -1;
+        }
+    }
+
     public abstract boolean debitaValor(float val, int pwd);
     public abstract void debitaValor(float val);
     public abstract void creditaValor(int pwd, float val);

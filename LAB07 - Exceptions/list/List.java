@@ -1,6 +1,7 @@
 package list;
 
 import list.Node;
+import list.ListSizeException;
 
 public class List {
     private Node head;
@@ -83,7 +84,7 @@ public class List {
     // criar nova exception? - caso size == 0 ?
     public void pop_front(){
         if(size == 0){
-            return;
+            throw new ListSizeException("A lista tem tamanho zero");
         }else if(size == 1){
             head = null;
             tail = null;
@@ -96,7 +97,7 @@ public class List {
 
     public void pop_back(){
         if(size == 0){
-            return;
+            throw new ListSizeException("A lista tem tamanho zero");
         }else if(size == 1){
             head = null;
             tail = null;
